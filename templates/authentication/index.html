@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message: </strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endfor %}
+    <div class="wrapper">
+    <div class="head">
+        <h3>Welcome to my OTP site</h3>
+    </div>
+    
+        <div class="buto">
+            {% if user.is_authenticated %}
+            <h3>Hello {{ fname }}</h3>
+            <h4>You're successfully logged in.</h4>
+            <a href="/signout"><button class="but" type="submit"><span>Sign Out</span></button></a>
+            {% else %}
+            <a href="/signup"><button class="but" type="submit"><span>Sign Up</span></button></a>
+            <br>
+            <a href="/signin"><button class="but" type="submit"><span>Sign  In</span></button></a>
+        {% endif %}
+        </div>  
+
+    </div>
+</body>
+</html>

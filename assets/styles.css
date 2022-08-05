@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.wrapper{
+    width:500px;
+    margin:auto auto;
+    font-size:x-large;
+    font-family:sans-serif;
+    border: 0.5px solid #e7e7e7;
+    height: 390px;
+    margin-top: 200px;
+    padding-top: 40px;
+    border-radius: 4px;
+}
+.but{
+    width:250px;
+    font-size:larger;
+    padding:10px;
+    border-radius:4px;
+    
+}
+.but:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.but {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #346cc1;
+    border: 0.5px solid #e7e7e7;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .but span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .but span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .but:hover span {
+    padding-right: 25px;
+  }
+  
+  .but:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .buto{
+    padding-left: 138px;
+  }
+  .head{
+    padding-left:78px;
+  }
