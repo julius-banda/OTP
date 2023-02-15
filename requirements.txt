@@ -1,7 +1,7 @@
 asgiref==3.5.2
 certifi==2022.6.15
 distlib==0.3.5
-Django==3.2.14
+Django==3.2.18
 filelock==3.7.1
 Pillow==9.2.0
 pipenv==2022.7.24
